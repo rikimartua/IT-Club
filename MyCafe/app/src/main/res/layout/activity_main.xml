@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_drink"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/img_drink"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleY="2"
+                android:src="@drawable/koffe" />
+
+            <TextView
+                android:id="@+id/title_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_drink"
+                android:text="Coffe Moca"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Desc_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_drink"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/img_drink"
+                android:text="eskripsi nya panjang sekaleee sampe gamuat lagi kolomnya wkwkwkwkwkwkwk gila emang"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/harga_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Desc_drink"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_drink"
+                android:text="Rp.30.000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/kurang_drink"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/harga_drink"
+                android:layout_centerInParent="true"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/tambah_drink"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/harga_drink"
+                android:layout_alignParentEnd="true"
+                android:text="+" />
+            <TextView
+                android:id="@+id/banyak_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/harga_drink"
+                android:layout_toRightOf="@id/kurang_drink"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textSize="20sp"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/cv_drink"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="3dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/img_makan"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:scaleY="2"
+                android:src="@drawable/pizza" />
+
+            <TextView
+                android:id="@+id/title_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_makan"
+                android:text="Pizza Italia"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Desc_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_makan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/img_makan"
+                android:text="eskripsi nya panjang sekaleee sampe gamuat lagi kolomnya wkwkwkwkwkwkwk gila emang"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/harga_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Desc_makan"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_makan"
+                android:text="Rp.50.000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/kurang_makan"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/harga_makan"
+                android:layout_centerInParent="true"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/tambah_makan"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/harga_makan"
+                android:layout_alignParentEnd="true"
+                android:text="+" />
+            <TextView
+                android:id="@+id/banyak_makan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/harga_makan"
+                android:layout_toRightOf="@id/kurang_makan"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:text="0"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/vg_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Rp.0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_purchased"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="Purchased"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_buy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:text="Buy" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="Reset" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
