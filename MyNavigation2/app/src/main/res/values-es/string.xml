@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MyNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titile_profil">Profile</string>
+    <string name="Content_tab_home">Welcome Home</string>
+    <string name="welcome_home">Welcome Home</string>
+    <string name="tab_text">This is Tab</string>
+    <string name="this_is_profile">This is Profile</string>
+
+
+    <string name="hello_world">Hello World %1$s, you have %2$d pokes from %3$s</string>
+    <string name="good_morning">Good Morning</string>
+    <plurals name="numberOfSongsAvailable">
+        <item quantity="one">%d song found.</item>
+        <item quantity="other">%d songs found.</item>
+    </plurals>
+    <string name="app_homeurl">
+       Visit us at <xliff:g id="application_homepage">https://dicoding.com</xliff:g>
+    </string>
+    <string name="change_language_settings">Change Language Settings</string>
+</resources>
